@@ -1,0 +1,47 @@
+.container-register{
+    /* background: red; */
+    width: 630px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 15px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+.register-h3{
+    color: rgb(231,130,4);
+    font-size: 40px;
+}
+.register-p{
+    color: rgb(121, 118, 118);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.register-form{
+    /* background: blue; */
+    padding: 0 30px 30px 30px;
+}
+.register-form-two{
+    /* background: red; */
+    /* padding: 50px; */
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.register-input{
+    margin: 15px;
+    border: 1px solid rgb(175, 165, 165);
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.form-check{
+    padding-bottom: 30px;
+}
+
+.MuiButton-textPrimary{
+    background: rgb(231,130,4) !important;
+    color: white !important;
+}
+.MuiInput-underline:before{
+    content: none !important;
+}
