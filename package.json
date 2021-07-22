@@ -20,7 +20,7 @@
     "stl-viewer": "^0.12.0",
     "styled-components": "^5.1.1",
     "website-scraper": "^4.2.1",
-    "xlsx": "^0.16.2"
+    "xlsx": "^0.17.0"
   },
   "scripts": {
     "start": "react-scripts start",
