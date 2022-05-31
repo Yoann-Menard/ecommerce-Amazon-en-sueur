@@ -118,17 +118,17 @@ export default class PageAccueil extends Component {
                                 <h2 className="main-limite">Des pièces en édition limitée</h2>
                                 <div>
                                     <img className="image-tendance-limite" height="250" width="350"
-                                         src={require('../images/Ecommerce1.png')}/>
+                                         src={require('../images/Ecommerce1.webp')}/>
                                     <img className="image-tendance-limite" height="250" width="350"
-                                         src={require('../images/Ecommerce2.png')}/>
+                                         src={require('../images/Ecommerce2.webp')}/>
                                     <img className="image-tendance-limite" height="250" width="350"
-                                         src={require('../images/Ecommerce3.png')}/>
+                                         src={require('../images/Ecommerce3.webp')}/>
                                     <img className="image-tendance-limite" height="250" width="350"
-                                         src={require('../images/Ecommerce4.png')}/>
+                                         src={require('../images/Ecommerce4.webp')}/>
                                     <img className="image-tendance-limite" height="250" width="350"
-                                         src={require('../images/Ecommerce5.png')}/>
+                                         src={require('../images/Ecommerce5.webp')}/>
                                     <img className="image-tendance-limite" height="250" width="350"
-                                         src={require('../images/Ecommerce6.png')}/>
+                                         src={require('../images/Ecommerce6.webp')}/>
                                 </div>
                                 <Link to="#" className="main-devis-p" style={{textDecoration: 'inherit'}}>Tout
                                     voir</Link>
@@ -156,7 +156,7 @@ export default class PageAccueil extends Component {
                             </div>
                             <div>
                                 <img className="image-tendance-limite" height="350" width="350"
-                                     src={require('../images/Ecommerce13.png')}/>
+                                     src={require('../images/Ecommerce13.webp')}/>
                             </div>
                         </div>
                     </div>
@@ -168,7 +168,7 @@ export default class PageAccueil extends Component {
                                 <div className="main-temoignage-para container-background">
                                     <div className="temoignage-padding">
                                         <img className="image-tendance-limite" height="110" width="110"
-                                             src={require('../images/Ecommerce11.png')}/>
+                                             src={require('../images/Ecommerce11.webp')}/>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquam
                                             necessitatibus provident quibusdam aliquid beatae, cupiditate reiciendis
                                             doloribus voluptatem dolores ipsam corrupti, quia sit eveniet numquam,
@@ -181,7 +181,7 @@ export default class PageAccueil extends Component {
                                 <div className="main-temoignage-para container-background">
                                     <div className="temoignage-padding">
                                         <img className="image-tendance-limite" height="110" width="110"
-                                             src={require('../images/Ecommerce10.png')}/>
+                                             src={require('../images/Ecommerce10.webp')}/>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquam
                                             necessitatibus provident quibusdam aliquid beatae, cupiditate reiciendis
                                             doloribus voluptatem dolores ipsam corrupti, quia sit eveniet numquam,
@@ -194,7 +194,7 @@ export default class PageAccueil extends Component {
                                 <div className="main-temoignage-para container-background">
                                     <div className="temoignage-padding">
                                         <img className="image-tendance-limite" height="110" width="110"
-                                             src={require('../images/Ecommerce10.png')}/>
+                                             src={require('../images/Ecommerce10.webp')}/>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquam
                                             necessitatibus provident quibusdam aliquid beatae, cupiditate reiciendis
                                             doloribus voluptatem dolores ipsam corrupti, quia sit eveniet numquam,
@@ -211,7 +211,7 @@ export default class PageAccueil extends Component {
                         <div className="container main-confiance container-background">
                             <div className="main-confiance-image">
                                 <Image className="image-confiance" width="280" height="170"
-                                       src={require('../images/deux.png')} alt="image qui represante la securite"/>
+                                       src={require('../images/deux.webp')} alt="image qui represante la securite"/>
                             </div>
                             <div className="">
                                 <h2>Faites nous confiance</h2>
@@ -234,7 +234,7 @@ export default class PageAccueil extends Component {
                             </div>
                             <div className="main-rencontre-image">
                                 <Image className="image-confiance" width="280" height="170"
-                                       src={require('../images/un.png')} alt="image qui represante la confiance"/>
+                                       src={require('../images/un.webp')} alt="image qui represante la confiance"/>
                             </div>
                         </div>
                     </div>
