@@ -118,17 +118,17 @@ export default class PageAccueil extends Component {
                                 <h2 className="main-limite">Des pièces en édition limitée</h2>
                                 <div>
                                     <img className="image-tendance-limite" height="250" width="350"
-                                         src={require('../images/Ecommerce1.webp')}/>
+                                         src={require('../images/Ecommerce1.webp')} alt="Printed panther"/>
                                     <img className="image-tendance-limite" height="250" width="350"
-                                         src={require('../images/Ecommerce2.webp')}/>
+                                         src={require('../images/Ecommerce2.webp')} alt="Printed car with parts"/>
                                     <img className="image-tendance-limite" height="250" width="350"
-                                         src={require('../images/Ecommerce3.webp')}/>
+                                         src={require('../images/Ecommerce3.webp')} alt="Printed turtle"/>
                                     <img className="image-tendance-limite" height="250" width="350"
-                                         src={require('../images/Ecommerce4.webp')}/>
+                                         src={require('../images/Ecommerce4.webp')} alt="Printed manticore"/>
                                     <img className="image-tendance-limite" height="250" width="350"
-                                         src={require('../images/Ecommerce5.webp')}/>
+                                         src={require('../images/Ecommerce5.webp')} alt="Printed elephant"/>
                                     <img className="image-tendance-limite" height="250" width="350"
-                                         src={require('../images/Ecommerce6.webp')}/>
+                                         src={require('../images/Ecommerce6.webp')} alt="Printed soldier statue"/>
                                 </div>
                                 <Link to="#" className="main-devis-p" style={{textDecoration: 'inherit'}}>Tout
                                     voir</Link>
