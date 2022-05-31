@@ -11,134 +11,159 @@
     display: flex;
     text-align: center;
 } */
-.test{
+.test {
     background: red;
 }
-.main-pageaccueil{
+
+.main-pageaccueil {
     padding: 70px 0 70px 0;
     background: #0b1930;
 }
-.badge-danger{
+
+.badge-danger {
     margin-right: 4px;
 }
-#basic-nav-dropdown{
-    color: rgb(231,130,4);
+
+#basic-nav-dropdown {
+    color: rgb(231, 130, 4);
 }
+
 /* La partie Header de PageAccueil.jsx */
 
 /* 111111111111111111111111 */
 
 
-.container-header-link{
+.container-header-link {
     padding: 10px;
     background: rgba(11, 25, 48, 0.966);
 }
-.header-link{
+
+.header-link {
     text-align: center;
     margin: 3px;
 }
-.main-devis-p{
-    color: rgb(231,130,4);
+
+.main-devis-p {
+    color: rgb(231, 130, 4);
 }
-.header-link a{
+
+.header-link a {
     margin: 20px;
-    color: rgb(231,130,4);
+    color: rgb(231, 130, 4);
 }
-.header-page{
+
+.header-page {
     text-align: center;
     padding: 20px;
 }
-.header-h1-color{
+
+.header-h1-color {
     font-size: 60px;
     color: white;
     padding-bottom: 30px;
 }
-.header-p-color{
+
+.header-p-color {
     color: white;
     padding-bottom: 20px;
 }
 
-.button-t{
-    background: rgb(231,130,4);
+.button-t {
+    background: rgb(231, 130, 4);
     font-size: 25px;
     padding: 10px;
     border-radius: 5px;
 }
-.button-t a{
+
+.button-t a {
     color: white;
 }
+
 /* 111111111111111111111111 */
 
 
 /* 222222222222222222222222 */
-.main-padding-top{
+.main-padding-top {
     padding: 50px;
     /* background: black; */
 }
-.main-padding-top-devis{
+
+.main-padding-top-devis {
     padding: 130px;
     background: #0b1930;
 }
-.main-devis{
+
+.main-devis {
     /* background: red; */
     /* padding: 30px 0 30px 0; */
     display: flex;
     justify-content: space-between;
 }
 
-.main-devis-h1{
+.main-devis-h1 {
     color: rgb(255, 255, 255);
     width: 400px;
 }
-.main-devis-logo{
+
+.main-devis-logo {
     display: flex;
     padding: 20px 0 10px 0;
 }
+
 .main-devis-logo i {
     padding-right: 10px;
     padding-top: 4px;
     color: white;
 }
+
 .main-temoignage {
     padding: 30px 0 30px 0;
     /* background: red; */
 }
-.main-temoignage-h1{
+
+.main-temoignage-h1 {
     text-align: center;
 }
-.main-temoignage-deux{
+
+.main-temoignage-deux {
     /* background: red; */
     padding-top: 20px;
     display: flex;
 }
 
-.main-temoignage-para{
+.main-temoignage-para {
     /* background: black; */
     text-align: center;
     padding: 50px 30px 50px 0;
     margin: 10px;
 }
+
 .main-temoignage-para p {
     padding-top: 10px;
     text-align: justify;
 }
-.temoignage-padding{
+
+.temoignage-padding {
     /* text-align: center; */
     /* background: red; */
     padding-left: 40px;
 }
-.main-tendance{
+
+.main-tendance {
     text-align: center;
 }
-.main-tendance-image{
+
+.main-tendance-image {
     text-align: center;
     padding: 20px 0 20px 0;
 }
-.image-tendance-limite{
+
+.image-tendance-limite {
     margin: 7px;
     border-radius: 6px;
 }
-.main-limite{
+
+.main-limite {
     text-align: center;
 }
 
@@ -150,76 +175,96 @@
 
 /* 333333333333333333333333 */
 
-.footer-un{
+.footer-un {
     background: rgba(11, 25, 48, 0.966);
 }
-.footer-deux{
+
+.footer-deux {
     background: #0b1930;
 }
-li{
+
+li {
     list-style: none;
 }
-.footer-li-color{
+
+.footer-li-color {
     color: rgb(201, 199, 199);
     margin-top: 5px;
 }
-.footer-h2-color{
+
+.footer-h2-color {
     color: rgb(255, 255, 255)
 }
-.footer-about{
+
+.footer-about {
     display: flex;
     justify-content: space-between;
     padding: 80px 0 30px 0;
 }
-.footer-container-about{
+
+.footer-container-about {
     padding: 0 20px 0 20px
 }
-.footer-title{
+
+.footer-title {
     padding-bottom: 30px;
 }
-.footer-ul{
+
+.footer-ul {
     padding-left: 0;
 }
-.footer-ul li{
+
+.footer-ul li {
     display: flex;
     text-align: left;
 }
-.footer-logo{
+
+.footer-logo {
     padding: 30px 0 30px 0;
 }
-.footer-phone-color{
+
+.footer-phone-color {
     color: blue;
 }
-.footer-a-logo i{
+
+.footer-facebook-logo,
+.footer-a-instagram-logo,
+.footer-a-twitter-logo,
+.footer-a-youtube-logo,
+.footer-a-gitlab-logo i {
     color: white;
     padding: 0 10px 0 10px;
 }
+
 /* 333333333333333333333333 */
 
 
-.error-404{
+.error-404 {
     text-align: center;
     padding-top: 30px;
     font-size: 50px;
 }
-.error-404-p{
+
+.error-404-p {
     text-align: center;
     padding-top: 20px;
     font-size: 25px;
     opacity: 0.4;
 }
-.error-404-click{
+
+.error-404-click {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 86px;
     /* margin: 30px; */
 }
-.error-404-home{
+
+.error-404-home {
     text-align: center;
     padding: 4px 30px 4px 30px;
     font-size: 30px;
     /* background: #4b0082; */
-    background: rgb(231,130,4);
+    background: rgb(231, 130, 4);
     /* background: #5400ec; */
     border-radius: 5px;
     color: rgb(255, 255, 255);
@@ -237,45 +282,49 @@ li{
 /* #5400ec */
 
 
-.container-background{
+.container-background {
     background: white;
 }
-.fa-user{
+
+.fa-user {
     font-size: 100px;
 }
 
 /* Protection des donnees */
-.main-confiance-top{
+.main-confiance-top {
     padding: 50px 0 50px 0;
 }
-.main-confiance{
+
+.main-confiance {
     padding: 50px 0 50px 0;
     display: flex;
     justify-content: space-between;
 }
 
-.image-confiance{
+.image-confiance {
     margin: 7px;
     border-radius: 5px;
 }
-.confiance-p{
+
+.confiance-p {
     margin: 12px;
 }
-.fa-check{
+
+.fa-check {
     margin: 10px;
 }
 
 
-.main-rencontre-p{
+.main-rencontre-p {
     padding-left: 90px;
     padding-right: 30px;
 }
 
-.main-rencontre-image{
+.main-rencontre-image {
     padding-right: 90px;
 }
 
-.main-confiance-image{
+.main-confiance-image {
     padding-left: 90px;
 }
 
@@ -293,95 +342,110 @@ textfield {
 
 
 
-.slide-un{
+.slide-un {
     /* display: inline-block; */
     /* opacity: 6; */
     overflow: hidden;
     position: relative;
     width: 100%;
 }
-.slide-deux{
+
+.slide-deux {
     /* overflow: hidden; */
     /* position: relative; */
     width: 1494px;
     display: none;
     position: relative;
 }
-.slide-trois{
+
+.slide-trois {
     margin-right: 20px;
 }
-.slide-quatre{
+
+.slide-quatre {
     margin-right: 200px;
     height: 178px;
 }
 
-.move-btn-main{
+.move-btn-main {
     display: flex;
     justify-content: space-between;
 }
-.move-btn{
+
+.move-btn {
     display: flex;
 }
 
-.left{
+.left {
     margin-right: 10px;
     margin-bottom: 10px;
 }
 
-.nom-du-site{
-    color: rgb(231,130,4);
+.nom-du-site {
+    color: rgb(231, 130, 4);
     padding-right: 20px;
 }
 
-.text-devis{
-    color: rgb(231,130,4);
+.text-devis {
+    color: rgb(231, 130, 4);
     font-size: 25px;
     padding-top: 100px;
 }
-.footer-devis-padding{
+
+.footer-devis-padding {
     padding-bottom: 200px;
 }
-.boutiques-p-padding{
-    color: rgb(231,130,4);
+
+.boutiques-p-padding {
+    color: rgb(231, 130, 4);
     font-size: 25px;
     padding-top: 120px;
 }
-.mes-commandes-padding{
+
+.mes-commandes-padding {
     padding-top: 100px;
     padding-bottom: 75px;
 }
-.recherche-mes-commande{
+
+.recherche-mes-commande {
     padding-bottom: 30px;
 }
-.mon-compte-padding{
+
+.mon-compte-padding {
     padding-top: 100px;
     padding-bottom: 70px;
 }
-.mon-compte-p{
-    color: rgb(231,130,4);
+
+.mon-compte-p {
+    color: rgb(231, 130, 4);
     font-size: 25px;
 }
-.suivi-commandes-padding{
-    padding-top: 100px;
-    padding-bottom: 110px;
-}
-.annonce-form-padding{
-    padding-top: 100px;
-    padding-bottom: 110px;
-}
-.ma-boutique-padding{
-    padding-top: 100px;
-    padding-bottom: 110px;
-}
-.mon-panier-padding{
+
+.suivi-commandes-padding {
     padding-top: 100px;
     padding-bottom: 110px;
 }
 
-.taille-image-boutique{
+.annonce-form-padding {
+    padding-top: 100px;
+    padding-bottom: 110px;
+}
+
+.ma-boutique-padding {
+    padding-top: 100px;
+    padding-bottom: 110px;
+}
+
+.mon-panier-padding {
+    padding-top: 100px;
+    padding-bottom: 110px;
+}
+
+.taille-image-boutique {
     height: 240px;
 }
-.container-mes-commandes{
+
+.container-mes-commandes {
     padding-top: 90px;
     padding-bottom: 90px;
 }
