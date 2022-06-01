@@ -227,8 +227,9 @@ export default class Panier extends React.Component {
                     ))}
                 </Row>
                 {this.state.date.getMonth() === 5 && <Row>
-                    <Form style={{marginLeft: "50px"}} className={"text-success"}>
-                        <Form.Check type="radio" label="Beneficiez d'un emballage gratuit!" onChange={(e) => this.setState({emballage: true})}/>
+                    <Form style={{ marginLeft: "50px" }} className={"text-success"}>
+                        <Form.Check type="radio"  className="form-check-input" id="free-case" onChange={(e) => this.setState({emballage: true})}/>
+                        <label for="free-case">Beneficiez d'un emballage gratuit!</label>
                     </Form>
                 </Row>}
                 <h5 className={"text-ecommerce4"}>
