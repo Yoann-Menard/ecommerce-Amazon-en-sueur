@@ -232,7 +232,7 @@ li {
 .footer-a-instagram-logo,
 .footer-a-twitter-logo,
 .footer-a-youtube-logo,
-.footer-a-gitlab-logo i {
+.footer-a-gitlab-logo {
     color: white;
     padding: 0 10px 0 10px;
 }
