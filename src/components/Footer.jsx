@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../css/font.css';
-import { Row } from 'react-bootstrap';
 
 export default class Footer extends Component {
   render() {
@@ -14,21 +13,11 @@ export default class Footer extends Component {
                   <strong className='footer-h2-color'>À propos</strong>
                 </div>
                 <ul className='footer-ul'>
-                  <a href='#'>
-                    <li className='footer-li-color'>À propos</li>
-                  </a>
-                  <a href='#'>
-                    <li className='footer-li-color'>Notre plateforme</li>
-                  </a>
-                  <a href='#'>
-                    <li className='footer-li-color'>Contrôle qualité</li>
-                  </a>
-                  <a href='#'>
-                    <li className='footer-li-color'>Protection IP</li>
-                  </a>
-                  <a href='#'>
-                    <li className='footer-li-color'>Nos partenaires</li>
-                  </a>
+                  <li className='footer-li-color'>À propos</li>
+                  <li className='footer-li-color'>Notre plateforme</li>
+                  <li className='footer-li-color'>Contrôle qualité</li>
+                  <li className='footer-li-color'>Protection IP</li>
+                  <li className='footer-li-color'>Nos partenaires</li>
                 </ul>
               </div>
               <div className='footer-container-about'>
@@ -38,18 +27,10 @@ export default class Footer extends Component {
                   </strong>
                 </div>
                 <ul className='footer-ul'>
-                  <a href='#'>
-                    <li className='footer-li-color'>Service d'impression 3D</li>
-                  </a>
-                  <a href='#'>
-                    <li className='footer-li-color'>Service d'usinage 3D</li>
-                  </a>
-                  <a href='#'>
-                    <li className='footer-li-color'>Marquage de pièce 3D</li>
-                  </a>
-                  <a href='#'>
-                    <li className='footer-li-color'>Finition de surface</li>
-                  </a>
+                  <li className='footer-li-color'>Service d'impression 3D</li>
+                  <li className='footer-li-color'>Service d'usinage 3D</li>
+                  <li className='footer-li-color'>Marquage de pièce 3D</li>
+                  <li className='footer-li-color'>Finition de surface</li>
                 </ul>
               </div>
               <div className='footer-container-about'>
@@ -57,24 +38,14 @@ export default class Footer extends Component {
                   <strong className='footer-h2-color'>Matières</strong>
                 </div>
                 <ul className='footer-ul'>
-                  <a href='#'>
-                    <li className='footer-li-color'>
-                      Plastiques en impression 3D
-                    </li>
-                  </a>
-                  <a href='#'>
-                    <li className='footer-li-color'>Métaux en impression 3D</li>
-                  </a>
-                  <a href='#'>
-                    <li className='footer-li-color'>
-                      Du bois en impression 3D
-                    </li>
-                  </a>
-                  <a href='#'>
-                    <li className='footer-li-color'>
-                      aluminium en impression 3D
-                    </li>
-                  </a>
+                  <li className='footer-li-color'>
+                    Plastiques en impression 3D
+                  </li>
+                  <li className='footer-li-color'>Métaux en impression 3D</li>
+                  <li className='footer-li-color'>Du bois en impression 3D</li>
+                  <li className='footer-li-color'>
+                    aluminium en impression 3D
+                  </li>
                 </ul>
               </div>
               <div className='footer-container-about'>
@@ -82,31 +53,17 @@ export default class Footer extends Component {
                   <strong className='footer-h2-color'>Contact</strong>
                 </div>
                 <ul className='footer-ul'>
-                  <a href='#'>
-                    <li className='footer-li-color'>Bureaux</li>
-                  </a>
-                  <a href='#'>
-                    <li className='footer-li-color'>Événement</li>
-                  </a>
-                  <a href='#'>
-                    <li className='footer-li-color'>Écrivez-nous</li>
-                  </a>
-                  <a href='#'>
-                    <li className='footer-li-color'>
-                      Appelez-nous au +33 123456789
-                    </li>
-                  </a>
-                  <a href='#'>
-                    <li className='footer-li-color'>Aide</li>
-                  </a>
-                  <a href='#'>
-                    <li className='footer-li-color'>
-                      Obtenir un devis Instantané
-                    </li>
-                  </a>
-                  <a href='#'>
-                    <li className='footer-li-color'>Demander une demo</li>
-                  </a>
+                  <li className='footer-li-color'>Bureaux</li>
+                  <li className='footer-li-color'>Événement</li>
+                  <li className='footer-li-color'>Écrivez-nous</li>
+                  <li className='footer-li-color'>
+                    Appelez-nous au +33 123456789
+                  </li>
+                  <li className='footer-li-color'>Aide</li>
+                  <li className='footer-li-color'>
+                    Obtenir un devis Instantané
+                  </li>
+                  <li className='footer-li-color'>Demander une demo</li>
                 </ul>
               </div>
             </div>
