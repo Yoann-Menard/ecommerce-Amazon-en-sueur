@@ -121,7 +121,7 @@ export default class Footer extends Component {
                 target='_blank'
                 aria-label='Facebook'
               >
-                <i class='fab fa-facebook-f'></i>
+                <i class='fab fa-facebook'></i>
               </a>
               <a
                 href='https://www.instagram.com/?hl=fr'

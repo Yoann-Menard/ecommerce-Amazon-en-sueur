@@ -1,6 +1,7 @@
 @font-face {
     font-family: Oswald;
     src: local(Oswald), url(../font/Oswald-VariableFont_wght.ttf) format("truetype");
+    font-display: swap;
 }
 
 
@@ -227,7 +228,7 @@ li {
     color: blue;
 }
 
-.footer-facebook-logo,
+.footer-a-facebook-logo,
 .footer-a-instagram-logo,
 .footer-a-twitter-logo,
 .footer-a-youtube-logo,
