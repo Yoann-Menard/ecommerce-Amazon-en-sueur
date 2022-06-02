@@ -39,7 +39,7 @@ export default class PageAccueil extends Component {
               loop
               autoPlay
             >
-              <source src='/videos/Slide1.mp4' type='video/mp4' />
+              <source src={require('../videos/Slide1.mp4')} type='video/mp4' />
             </video>
             <div className='container'>
               <Carousel style={{ zIndex: 4 }} touch={true}>
@@ -155,42 +155,42 @@ export default class PageAccueil extends Component {
                     className='image-tendance-limite'
                     height='250'
                     width='350'
-                    src='/images/Ecommerce1.webp'
+                    src={require('../images/Ecommerce1.png')}
                     alt='Printed panther'
                   />
                   <img
                     className='image-tendance-limite'
                     height='250'
                     width='350'
-                    src='/images/Ecommerce2.webp'
+                    src={require('../images/Ecommerce2.webp')}
                     alt='Printed car with parts'
                   />
                   <img
                     className='image-tendance-limite'
                     height='250'
                     width='350'
-                    src='/images/Ecommerce3.webp'
+                    src={require('../images/Ecommerce3.webp')}
                     alt='Printed turtle'
                   />
                   <img
                     className='image-tendance-limite'
                     height='250'
                     width='350'
-                    src='/images/Ecommerce4.webp'
+                    src={require('../images/Ecommerce4.webp')}
                     alt='Printed manticore'
                   />
                   <img
                     className='image-tendance-limite'
                     height='250'
                     width='350'
-                    src='/images/Ecommerce5.webp'
+                    src={require('../images/Ecommerce5.webp')}
                     alt='Printed elephant'
                   />
                   <img
                     className='image-tendance-limite'
                     height='250'
                     width='350'
-                    src='/images/Ecommerce6.webp'
+                    src={require('../images/Ecommerce6.webp')}
                     alt='Printed soldier statue'
                   />
                 </div>
@@ -239,7 +239,7 @@ export default class PageAccueil extends Component {
                   className='image-tendance-limite'
                   height='350'
                   width='350'
-                  src='/images/Ecommerce13.webp'
+                  src={require('../images/Ecommerce13.webp')}
                   alt='Printed spaceship'
                 />
               </div>
@@ -255,7 +255,7 @@ export default class PageAccueil extends Component {
                       className='image-tendance-limite'
                       height='110'
                       width='110'
-                      src='/images/Ecommerce11.webp'
+                      src={require('../images/Ecommerce11.webp')}
                       alt='Witness'
                     />
                     <p>
@@ -277,7 +277,7 @@ export default class PageAccueil extends Component {
                       className='image-tendance-limite'
                       height='110'
                       width='110'
-                      src='/images/Ecommerce10.webp'
+                      src={require('../images/Ecommerce10.webp')}
                       alt='Second Witness'
                     />
                     <p>
@@ -299,7 +299,7 @@ export default class PageAccueil extends Component {
                       className='image-tendance-limite'
                       height='110'
                       width='110'
-                      src='/images/Ecommerce10.webp'
+                      src={require('../images/Ecommerce10.webp')}
                       alt='Third Witness'
                     />
                     <p>
@@ -324,7 +324,7 @@ export default class PageAccueil extends Component {
                   className='image-confiance'
                   width='280'
                   height='170'
-                  src='/images/deux.webp'
+                  src={require('../images/deux.webp')}
                   alt='image qui represante la securite'
                 />
               </div>
@@ -365,7 +365,7 @@ export default class PageAccueil extends Component {
                   className='image-confiance'
                   width='280'
                   height='170'
-                  src='/images/un.webp'
+                  src={require('../images/un.webp')}
                   alt='image qui represante la confiance'
                 />
               </div>
