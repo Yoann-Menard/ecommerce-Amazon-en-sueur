@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Axios from "axios";
-import { Button, Card, Col, Container, Row, Badge } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../../css/font.css";
 
@@ -31,7 +31,7 @@ export default class Vendeur extends Component {
     getAllMembers = () => {
         Axios.post("http://localhost:8000/boutiques")
             .then(res => {
-                this.setState({membre: res.data});
+                this.setState({ membre: res.data });
                 console.log(res.data)
             });
     }
@@ -39,12 +39,12 @@ export default class Vendeur extends Component {
     getAllViews = () => {
         Axios.post("http://localhost:8000/view")
             .then(res => {
-                this.setState({view: res.data})
+                this.setState({ view: res.data })
                 console.log(res.data)
             })
     }
 
-    render () {
+    render() {
         return (
             <Container>
                 <Row className="qwerty">

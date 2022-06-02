@@ -122,7 +122,7 @@ export default class PageAccueil extends Component {
                     <Carousel>
                       {this.state.articles.map((x, i) => (
                         <Carousel.Item>
-                          <img src={`http://localhost:8000${x.photo}`} />
+                          <img src={`http://localhost:8000${x.photo}`} alt="Carousel" />
                           <Link to={`/article/${x.id}`}>
                             <Carousel.Caption>
                               <h1 className={'text-ecommerce4'}>{x.name}</h1>
@@ -241,7 +241,7 @@ export default class PageAccueil extends Component {
                   height='350'
                   width='350'
                   src={require('../images/Ecommerce13.webp')}
-                  alt='Picture of a printed spaceship'
+                  alt='Printed spaceship'
                 />
               </div>
             </div>
@@ -257,7 +257,7 @@ export default class PageAccueil extends Component {
                       height='110'
                       width='110'
                       src={require('../images/Ecommerce11.webp')}
-                      alt='Photo of a witness'
+                      alt='Witness'
                     />
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -279,7 +279,7 @@ export default class PageAccueil extends Component {
                       height='110'
                       width='110'
                       src={require('../images/Ecommerce10.webp')}
-                      alt='Photo of a second witness'
+                      alt='Second Witness'
                     />
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -301,7 +301,7 @@ export default class PageAccueil extends Component {
                       height='110'
                       width='110'
                       src={require('../images/Ecommerce10.webp')}
-                      alt='Photo of a  witness'
+                      alt='Third Witness'
                     />
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -377,9 +377,3 @@ export default class PageAccueil extends Component {
     );
   }
 }
-
-const style = {
-  boutique: {
-    cursor: 'pointer',
-  },
-};

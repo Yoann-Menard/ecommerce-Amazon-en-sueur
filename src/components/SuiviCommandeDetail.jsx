@@ -1,14 +1,14 @@
-import React, {useEffect, useState} from "react";
-import {useParams} from "react-router-dom";
-import {Button, Card, Col, Container, Form, Image, Row} from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
 import Axios from "axios";
 
 export default function SuiviCommandeDetail() {
-    const {id} = useParams();
+    const { id } = useParams();
     const [commande, setCommande] = useState([]);
 
-    useEffect(() => {
-        Axios.post("http://localhost:8000/suiviCommandeDetail", {id: id})
+    useEffect((commande) => {
+        Axios.post("http://localhost:8000/suiviCommandeDetail", { id: id })
             .then(res => {
                 if (res.data !== commande) setCommande(res.data);
             });
@@ -29,18 +29,18 @@ export default function SuiviCommandeDetail() {
                     <Button className={"d-print-none"} variant={"ecommerce4"} onClick={(e) => window.print()}>
                         Imprimer une Facture
                     </Button>
-                    <hr/>
+                    <hr />
                     <Row>
                         <Col >
 
-                            <Card.Img variant="top" src={`http://localhost:8000${x.detailArticle.photo}`}/>
+                            <Card.Img variant="top" src={`http://localhost:8000${x.detailArticle.photo}`} />
                             <h3>{`Article: ${x.detailArticle.name}`}</h3>
                             <h3>{`Prix: ${x.total}€`}</h3>
                             <h3>{`Nombre d'article: ${x.nombre_article}`}</h3>
                         </Col>
                         <Col>
-                            <Row style={{marginTop: "20px"}}>
-                                <Col className={"text-ecommerce2"} style={{borderRight: "1px solid grey"}}>
+                            <Row style={{ marginTop: "20px" }}>
+                                <Col className={"text-ecommerce2"} style={{ borderRight: "1px solid grey" }}>
                                     <h3>{`Nom: ${x.nom}`}</h3>
                                     <h3>{`Prenom: ${x.prenom}`}</h3>
                                 </Col>
@@ -50,9 +50,9 @@ export default function SuiviCommandeDetail() {
                                     <h3>{`Code postal: ${x.code_postal}`}</h3>
                                 </Col>
                             </Row>
-                            <hr/>
+                            <hr />
                             <Row>
-                                <Col className={"text-ecommerce2"} style={{borderRight: "1px solid grey"}}>
+                                <Col className={"text-ecommerce2"} style={{ borderRight: "1px solid grey" }}>
                                     <h3>{`Date: ${new Date(Date.parse(x.date)).toString()}`}</h3>
                                 </Col>
                                 <Col className={"text-ecommerce2"}>

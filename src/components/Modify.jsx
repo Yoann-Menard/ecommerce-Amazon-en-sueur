@@ -1,5 +1,5 @@
 import React from "react";
-import {Button, Col, Container, Form, FormControl, Row, Badge} from "react-bootstrap";
+import { Button, Col, Container, Form, FormControl, Row, Badge } from "react-bootstrap";
 import Axios from "axios";
 
 export default class Modify extends React.Component {
@@ -29,7 +29,7 @@ export default class Modify extends React.Component {
 
     getPays = async () => {
         const res = await Axios.post("http://localhost:8000/getPays");
-        this.setState({pays: res.data});
+        this.setState({ pays: res.data });
     }
 
     sendForm = async (e) => {
@@ -42,7 +42,7 @@ export default class Modify extends React.Component {
         form.append("photo", this.state.photo);
         form.append("id_vendeur", localStorage.getItem("userId"));
         form.append("id", this.state.id)
-        const response = await Axios.post("http://localhost:8000/modifyArticle", form);
+        await Axios.post("http://localhost:8000/modifyArticle", form);
         window.location = "http://localhost:3000/maBoutique";
     }
 
@@ -60,8 +60,8 @@ export default class Modify extends React.Component {
 
     searchCategorie = async (e) => {
         if (e.target.value.length > 0) {
-            const res = await Axios.post("http://localhost:8000/searchCategorie", {search: e.target.value});
-            this.setState({categoriesResult: res.data});
+            const res = await Axios.post("http://localhost:8000/searchCategorie", { search: e.target.value });
+            this.setState({ categoriesResult: res.data });
         }
     }
 
@@ -70,7 +70,7 @@ export default class Modify extends React.Component {
             idCategorie: parseInt(e.target.getAttribute("value")),
             id: this.state.id
         };
-        const res = await Axios.post("http://localhost:8000/addCategorie", body);
+        await Axios.post("http://localhost:8000/addCategorie", body);
         this.refreshCategorie();
     }
 
@@ -79,13 +79,13 @@ export default class Modify extends React.Component {
             idCategorie: parseInt(e.target.getAttribute("value")),
             id: this.state.id
         };
-        const res = await Axios.post("http://localhost:8000/deleteCategorie", body);
+        await Axios.post("http://localhost:8000/deleteCategorie", body);
         this.refreshCategorie();
     }
 
     refreshCategorie = async () => {
-        const res = await Axios.post("http://localhost:8000/articleCategorie", {id: this.state.id});
-        this.setState({categories: res.data});
+        const res = await Axios.post("http://localhost:8000/articleCategorie", { id: this.state.id });
+        this.setState({ categories: res.data });
         console.log(res.data)
     }
 
@@ -99,23 +99,23 @@ export default class Modify extends React.Component {
                             <Row>
                                 <Col>
                                     <Form.Control required placeholder="Nom de l'article"
-                                                  onChange={val => this.state.name = val.target.value}/>
+                                        onChange={(e) => this.setState({ name: e.target.value })} />
                                 </Col>
                                 <Col>
                                     <Form.Control required type={"number"} placeholder="Prix"
-                                                  onChange={val => this.state.price = val.target.value}/>
+                                        onChange={(e) => this.setState({ price: e.target.value })} />
                                 </Col>
                             </Row>
-                            <Form.Control required style={{marginTop: "20px"}} as="textarea" rows="3"
-                                          onChange={val => this.state.description = val.target.value}/>
-                            <Row style={{marginTop: "20px"}}>
+                            <Form.Control required style={{ marginTop: "20px" }} as="textarea" rows="3"
+                                onChange={(e) => this.setState({ description: e.target.value })} />
+                            <Row style={{ marginTop: "20px" }}>
                                 <Col>
                                     <Form.Control required type={"number"} placeholder="Stock"
-                                                  onChange={val => this.state.stock = val.target.value}/>
+                                        onChange={(e) => this.setState({ stock: e.target.value })} />
                                 </Col>
                                 <Col>
                                     <Form.File required name="Photo" label="Photo"
-                                               onChange={val => this.state.photo = val.target.files[0]}/>
+                                        onChange={(e) => this.setState({ photo: e.target.files[0] })} />
                                 </Col>
                                 <Col>
                                     <Button type={"submit"} variant={"ecommerce3"} onClick={this.sendForm}>
@@ -140,7 +140,7 @@ export default class Modify extends React.Component {
                                     </Form.Control>
                                 </Col>
                             </Row>
-                            <hr/>
+                            <hr />
                             <Row>
                                 <Col>
                                     Interdire un pays:
@@ -159,15 +159,15 @@ export default class Modify extends React.Component {
                         </Col>
                     </Row>
                 </Form>
-                <hr/>
+                <hr />
                 <Row>
                     <Col>
                         <p className="mon-compte-p">Ajouter une categorie au produit:</p>
                         <FormControl type="text" onChange={this.searchCategorie} placeholder="Recherchez un objet"
-                                     className="mr-sm-2"/>
+                            className="mr-sm-2" />
                         <Row>
                             {this.state.categoriesResult.map((x, i) => (
-                                <h4 style={{paddingLeft: "6px", cursor: "pointer"}} onClick={this.addCategorie}>
+                                <h4 style={{ paddingLeft: "6px", cursor: "pointer" }} onClick={this.addCategorie}>
                                     <Badge variant="ecommerce4" value={x.id}>
                                         {x.name}
                                     </Badge>{' '}
@@ -178,7 +178,7 @@ export default class Modify extends React.Component {
                         <p className="mon-compte-p">Supprimer une categorie au produit:</p>
                         <Row>
                             {this.state.categories.map((x, i) => (
-                                <h4 style={{paddingLeft: "6px", cursor: "pointer"}} onClick={this.deleteCategorie}>
+                                <h4 style={{ paddingLeft: "6px", cursor: "pointer" }} onClick={this.deleteCategorie}>
                                     <Badge variant="ecommerce4" value={x.id}>
                                         {x.name}
                                     </Badge>{' '}

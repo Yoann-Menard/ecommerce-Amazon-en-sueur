@@ -1,6 +1,5 @@
 import React from "react";
-import STLViewer from "stl-viewer";
-import {Form, Row, Col, Container, Button} from "react-bootstrap";
+import { Form, Row, Container } from "react-bootstrap";
 import ApiThingiverse from "./ApiThingiverse";
 import StlDevis from "./StlDevis";
 import StlUpload from "./StlUpload";
@@ -26,7 +25,7 @@ export default class Devis extends React.Component {
     }
 
     getStlFromAPI = (tab, path) => {
-        this.setState({url: tab, path: path, showSTL: true});
+        this.setState({ url: tab, path: path, showSTL: true });
         console.log(this.state);
     }
 
@@ -35,11 +34,11 @@ export default class Devis extends React.Component {
             <Container className="footer-devis-padding">
                 <Row>
                     {this.state.showSTL && this.state.url.map((x, i) => (<Row>
-                        <StlDevis path={this.state.path} url={x} refresh={this.props.refresh}/>
-                        <hr/>
+                        <StlDevis path={this.state.path} url={x} refresh={this.props.refresh} />
+                        <hr />
                     </Row>))}
                     {this.state.showUpload &&
-                    <StlUpload path={this.state.upload} refresh={this.props.refresh}/>
+                        <StlUpload path={this.state.upload} refresh={this.props.refresh} />
                     }
                 </Row>
                 <Form>
@@ -52,7 +51,7 @@ export default class Devis extends React.Component {
                     />
                 </Form>
                 <p className="text-devis">Faites une recherche pour obtenir la pièce que vous souhaitez.</p>
-                <ApiThingiverse stl={this.getStlFromAPI}/>
+                <ApiThingiverse stl={this.getStlFromAPI} />
             </Container>
         )
     }
