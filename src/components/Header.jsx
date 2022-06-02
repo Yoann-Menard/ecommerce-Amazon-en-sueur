@@ -1,6 +1,6 @@
 import React from 'react';
-import {Navbar, Nav, NavDropdown, Form, FormControl, Button, Badge, Row, Col} from "react-bootstrap";
-import {Link} from "react-router-dom";
+import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Badge, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import Axios from "axios";
 
 export default class Header extends React.Component {
@@ -20,23 +20,23 @@ export default class Header extends React.Component {
 
     componentWillReceiveProps(nextProps, nextContext) {
         if (nextProps.taille)
-            this.setState({taillePanier: nextProps.taille});
+            this.setState({ taillePanier: nextProps.taille });
         if (nextProps.isAdmin)
-            this.setState({isAdmin: true});
+            this.setState({ isAdmin: true });
         if (nextProps.isConnected)
-            this.setState({isConnected: true});
+            this.setState({ isConnected: true });
     }
 
     login = () => {
-        Axios.post("http://localhost:8000/login", {email: this.state.email, password: this.state.password})
+        Axios.post("http://localhost:8000/login", { email: this.state.email, password: this.state.password })
             .then(res => {
                 console.log(res.data);
                 if (res.data.valid) {
                     localStorage.setItem("userId", res.data.id);
-                    this.setState({isConnected: true, error: null});
+                    this.setState({ isConnected: true, error: null });
                     this.props.refreshConnect();
                     window.location.reload();
-                } else this.setState({error: true});
+                } else this.setState({ error: true });
             });
     }
 
@@ -61,7 +61,7 @@ export default class Header extends React.Component {
                                 />
                             </Navbar.Brand>
                         </Link>
-                        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="mr-auto">
                                 <Link to={"/devis"}>
@@ -89,10 +89,10 @@ export default class Header extends React.Component {
                                     <NavDropdown title="Se Connecter" id="basic-nav-dropdown">
                                         {this.state.error && <p className={"text-danger"}>Mauvais identifiants !</p>}
                                         <FormControl autoFocus className="mx-3 my-2 w-auto" placeholder="Email"
-                                                     onChange={(e) => this.setState({email: e.target.value})}/>
+                                            onChange={(e) => this.setState({ email: e.target.value })} />
                                         <FormControl type={"password"} className="mx-3 my-2 w-auto"
-                                                     placeholder="Mot de passe"
-                                                     onChange={(e) => this.setState({password: e.target.value})}/>
+                                            placeholder="Mot de passe"
+                                            onChange={(e) => this.setState({ password: e.target.value })} />
                                         <Row>
                                             <Col sm={6}>
                                                 <Button variant={"ecommerce2"} onClick={this.login}>
@@ -138,10 +138,10 @@ export default class Header extends React.Component {
                             </Nav>
                             <Form inline>
                                 <FormControl type="text"
-                                             onChange={(e) => this.setState({search: `/search/${e.target.value}`})}
-                                             placeholder="Recherchez un objet" className="mr-sm-2"/>
+                                    onChange={(e) => this.setState({ search: `/search/${e.target.value}` })}
+                                    placeholder="Recherchez un objet" className="mr-sm-2" />
                                 <Link to={this.state.search}>
-                                    <Button variant="ecommerce3">Go</Button>
+                                    <Button variant="ecommerce3">Recherche</Button>
                                 </Link>
                             </Form>
                         </Navbar.Collapse>

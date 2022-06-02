@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import '../css/font.css';
 import Axios from 'axios';
 import { Container, Image, Carousel } from 'react-bootstrap';
-
 import Menu from './Menu';
 
 export default class PageAccueil extends Component {
