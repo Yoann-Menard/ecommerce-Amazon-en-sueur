@@ -76,6 +76,7 @@ export default class Footer extends Component {
                 href='https://fr-fr.facebook.com/'
                 className='footer-a-facebook-logo d-print-none'
                 target='_blank'
+                rel='noopener noreferrer'
                 aria-label='Facebook'
               >
                 <i class='fab fa-facebook'></i>
@@ -84,6 +85,7 @@ export default class Footer extends Component {
                 href='https://www.instagram.com/?hl=fr'
                 className='footer-a-instagram-logo d-print-none'
                 target='_blank'
+                rel='noopener noreferrer'
                 aria-label='Instagram'
               >
                 <i class='fab fa-instagram'></i>
@@ -92,6 +94,7 @@ export default class Footer extends Component {
                 href='https://twitter.com/explore'
                 className='footer-a-twitter-logo d-print-none'
                 target='_blank'
+                rel='noopener noreferrer'
                 aria-label='Twitter'
               >
                 <i class='fab fa-twitter'></i>
@@ -100,6 +103,7 @@ export default class Footer extends Component {
                 href='https://www.youtube.com/'
                 className='footer-a-youtube-logo d-print-none'
                 target='_blank'
+                rel='noopener noreferrer'
                 aria-label='Youtube'
               >
                 <i class='fab fa-youtube'></i>
@@ -108,6 +112,7 @@ export default class Footer extends Component {
                 href='https://gitlab.com/'
                 className='footer-a-gitlab-logo d-print-none'
                 target='_blank'
+                rel='noopener noreferrer'
                 aria-label='Gitlab'
               >
                 <i class='fab fa-gitlab'></i>

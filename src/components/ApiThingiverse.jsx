@@ -1,7 +1,6 @@
 import React from "react";
-import {Button, Form, FormControl, Card, InputGroup, Row, Col} from "react-bootstrap";
+import {Button, FormControl, Card, InputGroup, Row, Col} from "react-bootstrap";
 import Axios from "axios";
-import STLViewer from "stl-viewer";
 
 export default class ApiThingiverse extends React.Component {
     constructor(props) {
