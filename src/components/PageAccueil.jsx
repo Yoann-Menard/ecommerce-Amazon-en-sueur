@@ -155,7 +155,7 @@ export default class PageAccueil extends Component {
                     className='image-tendance-limite'
                     height='250'
                     width='350'
-                    src={require('../images/Ecommerce1.png')}
+                    src={require('../images/Ecommerce1.webp')}
                     alt='Printed panther'
                   />
                   <img
