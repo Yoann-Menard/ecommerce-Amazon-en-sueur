@@ -111,13 +111,13 @@ export default class MostViewed extends React.Component {
                           <>
                             <h4>
                               <a
-                                href='#'
+                                href='/#'
                                 style={{
                                   textDecoration: 'line-through',
                                   textDecorationColor: 'red',
                                 }}
                               >{`${x.price}€`}</a>
-                              <a className={'text-success'}>{` -${x.sale}%`}</a>
+                              <a href="/#" className={'text-success'}>{` -${x.sale}%`}</a>
                             </h4>
                             <h3 className={'text-success'}>
                               {`${x.price - x.price * (x.sale / 100)}€`}

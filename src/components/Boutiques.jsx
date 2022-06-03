@@ -1,7 +1,7 @@
 import React from "react";
-import {Container, Card, Badge, Row, Button, Col, Form} from "react-bootstrap";
+import { Container, Card, Badge, Row, Button, Col, Form } from "react-bootstrap";
 import Axios from "axios";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default class Boutiques extends React.Component {
     constructor(props) {
@@ -41,7 +41,7 @@ export default class Boutiques extends React.Component {
                 }
         let boutiques = this.state.boutiques;
         boutiques[this.state.key].articles = articles;
-        this.setState({boutiques: boutiques});
+        this.setState({ boutiques: boutiques });
     }
 
     triDecroissant = () => {
@@ -49,14 +49,14 @@ export default class Boutiques extends React.Component {
         for (let i = 0; i < articles.length - 1; i++)
             for (let j = 0; j < articles.length - 1; j++)
                 if (articles[j].price < articles[j + 1].price) {
-                const temp = articles[j];
-                articles[j] = articles[j + 1];
-                articles[j + 1] = temp;
-                i = 0;
-            }
+                    const temp = articles[j];
+                    articles[j] = articles[j + 1];
+                    articles[j + 1] = temp;
+                    i = 0;
+                }
         let boutiques = this.state.boutiques;
         boutiques[this.state.key].articles = articles;
-        this.setState({boutiques: boutiques});
+        this.setState({ boutiques: boutiques });
     }
 
     triAlpha = () => {
@@ -64,7 +64,7 @@ export default class Boutiques extends React.Component {
         articles.sort((x, y) => x.name.localeCompare(y.name));
         let boutiques = this.state.boutiques;
         boutiques[this.state.key].articles = articles;
-        this.setState({boutiques: boutiques});
+        this.setState({ boutiques: boutiques });
     }
 
     triAlphaInverse = () => {
@@ -72,11 +72,12 @@ export default class Boutiques extends React.Component {
         articles.sort((x, y) => y.name.localeCompare(x.name));
         let boutiques = this.state.boutiques;
         boutiques[this.state.key].articles = articles;
-        this.setState({boutiques: boutiques});    }
+        this.setState({ boutiques: boutiques });
+    }
 
     componentDidMount() {
         Axios.post("http://localhost:8000/boutiques").then(res => {
-            this.setState({boutiques: res.data});
+            this.setState({ boutiques: res.data });
             console.log(res.data)
         });
     }
@@ -91,7 +92,7 @@ export default class Boutiques extends React.Component {
                             <>
                                 <Col lg={4} sm={12} md={6}>
                                     <Card key={i} style={style.boutique} onClick={(e) => this.changeShop(e, i)}>
-                                         <Card.Img value={i} variant="top" src={`http://localhost:8000${x.photo}`}/>
+                                        <Card.Img value={i} variant="top" src={`http://localhost:8000${x.photo}`} />
                                         <Card.Body>
                                             <Card.Text className="text-ecommerce2">
                                                 <h5 className={"text-ecommerce4"}>{x.username}</h5>
@@ -99,7 +100,7 @@ export default class Boutiques extends React.Component {
                                             </Card.Text>
                                         </Card.Body>
                                     </Card>
-                                    <br/>
+                                    <br />
                                 </Col>
                             </>
 
@@ -122,24 +123,24 @@ export default class Boutiques extends React.Component {
                                 </Form.Control>
                             </Col>
                         </Row>
-                        <hr/>
+                        <hr />
                         <Row>
                             {this.state.boutiques[this.state.key].articles.map((x, i) => (
                                 <>
                                     <Col lg={4} sm={12} md={6}>
                                         <Card key={i}>
                                             <Card.Img style={style.boutique} variant="top"
-                                                      src={`http://localhost:8000${x.photo}`}/>
+                                                src={`http://localhost:8000${x.photo}`} />
                                             <Card.Body>
                                                 <Card.Text className="text-ecommerce1">
                                                     <h3 className="text-ecommerce2">{x.name}</h3>
                                                     {x.description}
                                                 </Card.Text>
-                                                    {x.categorie.map((y, j) => (<>
-                                                        <Badge variant="ecommerce4" value={y.id}>
-                                                            {y.name}
-                                                        </Badge>{' '}
-                                                    </>))}
+                                                {x.categorie.map((y, j) => (<>
+                                                    <Badge variant="ecommerce4" value={y.id}>
+                                                        {y.name}
+                                                    </Badge>
+                                                </>))}
                                             </Card.Body>
                                             <Card.Footer>
                                                 <Row>
@@ -147,14 +148,14 @@ export default class Boutiques extends React.Component {
                                                         {x.sale === 0 && <h4>{`${x.price}€`}</h4>}
                                                         {x.sale !== 0 && <>
                                                             <h4 >
-                                                                <a style={{
+                                                                <a href="/#" style={{
                                                                     textDecoration: "line-through",
                                                                     textDecorationColor: "red"
                                                                 }}>{`${x.price}€`}</a>
-                                                                <a className={"text-success"}>{` -${x.sale}%`}</a>
+                                                                <a href="/#" className={"text-success"}>{` -${x.sale}%`}</a>
                                                             </h4>
                                                             <h3 className={"text-success"}>
-                                                                {`${x.price - (x.price  * (x.sale / 100))}€`}
+                                                                {`${x.price - (x.price * (x.sale / 100))}€`}
                                                             </h3>
                                                         </>
                                                         }
@@ -169,7 +170,7 @@ export default class Boutiques extends React.Component {
                                                 </Row>
                                             </Card.Footer>
                                         </Card>
-                                        <br/>
+                                        <br />
                                     </Col>
                                 </>
                             ))}

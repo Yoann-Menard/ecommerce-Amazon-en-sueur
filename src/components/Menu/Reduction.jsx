@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Axios from "axios";
-import {Button, Card, Col, Container, Form, Row} from "react-bootstrap";
-import {Link} from "react-router-dom";
+import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default class Reduction extends Component {
     constructor(props) {
@@ -17,8 +17,8 @@ export default class Reduction extends Component {
     }
 
     getMostViewed = () => {
-        Axios.post("http://localhost:8000/inSale", {id: this.state.idUser})
-            .then(resp => this.setState({articles: resp.data}));
+        Axios.post("http://localhost:8000/inSale", { id: this.state.idUser })
+            .then(resp => this.setState({ articles: resp.data }));
     }
 
     changeTri = (e) => {
@@ -38,7 +38,7 @@ export default class Reduction extends Component {
                     articles[j + 1] = temp;
                     i = 0;
                 }
-        this.setState({articles: articles});
+        this.setState({ articles: articles });
     }
 
     triDecroissant = () => {
@@ -51,19 +51,19 @@ export default class Reduction extends Component {
                     articles[j + 1] = temp;
                     i = 0;
                 }
-        this.setState({articles: articles});
+        this.setState({ articles: articles });
     }
 
     triAlpha = () => {
         let articles = this.state.articles;
         articles.sort((x, y) => x.name.localeCompare(y.name));
-        this.setState({articles: articles});
+        this.setState({ articles: articles });
     }
 
     triAlphaInverse = () => {
         let articles = this.state.articles;
         articles.sort((x, y) => y.name.localeCompare(x.name));
-        this.setState({articles: articles});
+        this.setState({ articles: articles });
     }
 
     render() {
@@ -83,7 +83,7 @@ export default class Reduction extends Component {
                         </Form.Control>
                     </Col>
                 </Row>
-                <hr/>
+                <hr />
                 <p className="boutiques-p-padding">Les articles en reduction :</p>
                 <Row>
                     {
@@ -92,7 +92,7 @@ export default class Reduction extends Component {
                                 <Col lg={4} sm={12} md={6}>
                                     <Card key={i}>
                                         <Card.Img style={style.boutique} variant="top"
-                                                  src={`http://localhost:8000${x.photo}`}/>
+                                            src={`http://localhost:8000${x.photo}`} />
                                         <Card.Body>
                                             <Card.Text className="text-ecommerce1">
                                                 <h3 className="text-ecommerce2">{x.name}</h3>
@@ -106,14 +106,14 @@ export default class Reduction extends Component {
                                                     {x.sale === 0 && <h4>{`${x.price}€`}</h4>}
                                                     {x.sale !== 0 && <>
                                                         <h4 >
-                                                            <a style={{
+                                                            <a href="/#" style={{
                                                                 textDecoration: "line-through",
                                                                 textDecorationColor: "red"
                                                             }}>{`${x.price}€`}</a>
-                                                            <a className={"text-success"}>{` -${x.sale}%`}</a>
+                                                            <a href="/#" className={"text-success"}>{` -${x.sale}%`}</a>
                                                         </h4>
                                                         <h3 className={"text-success"}>
-                                                            {`${x.price - (x.price  * (x.sale / 100))}€`}
+                                                            {`${x.price - (x.price * (x.sale / 100))}€`}
                                                         </h3>
                                                     </>
                                                     }
@@ -128,7 +128,7 @@ export default class Reduction extends Component {
                                             </Row>
                                         </Card.Footer>
                                     </Card>
-                                    <br/>
+                                    <br />
                                 </Col>
                             </>
                         ))
